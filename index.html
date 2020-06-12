@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css" media="all">
 </head>
 <body>
-  <p id="os"><b>OS9999:</b> </p>
+  <p id="os"><b>OS555:</b> </p>
   <p id="language"><b>Language:</b> </p>
   <p id="version"><b>Version:</b> </p>
   <p id="isInClient"><b>isInClient:</b> </p>
@@ -88,11 +88,11 @@
       document.getElementById("accessToken").append(liff.getAccessToken())
 
        if (liff.isInClient()){
-        alert("True")
+        //alert("True")
           document.getElementById("btnLogOut").style.display="none"  
 
        }else{
-        alert("false")
+        //alert("false")
           document.getElementById("btnMsg").style.display = "none"
           document.getElementById("btnScanCode").style.display = "none"
           document.getElementById("btnClose").style.display = "none"
@@ -103,7 +103,7 @@
       
       await liff.init({ liffId: "1654325680-pgWOr4k7" })
        getEnvironment()
-       getUserProfile()
+       //getUserProfile()
       // getContext()
       // getFriendship()
       // createUniversalLink()
