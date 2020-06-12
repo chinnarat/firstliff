@@ -42,7 +42,7 @@
     console.log("Hello World!")
   </script> -->
 
-  <script src="https://static.line-scdn.net/liff/edge/versions/2.1.13/sdk.js"></script>
+  <script src="https://static.line-scdn.net/liff/edge/versions/2.1/sdk.js"></script>
   <script>
     function createUniversalLink() {
     }
@@ -79,10 +79,12 @@
       document.getElementById("language").append(liff.getLanguage())
       document.getElementById("version").append(liff.getVersion())
       document.getElementById("accessToken").append(liff.getAccessToken())
-      
+
        if (liff.isInClient()){
           document.getElementById("btnLogOut").style.display="none"
+          
        }else{
+         
           document.getElementById("btnMsg").style.display = "none"
           document.getElementById("btnScanCode").style.display = "none"
           document.getElementById("btnClose").style.display = "none"
